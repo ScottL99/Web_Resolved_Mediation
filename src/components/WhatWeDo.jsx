@@ -1,21 +1,23 @@
-import { contents1, navLinks } from "../constants";
+import { whatWeDoContents, navLinks, whatWeDoTitle } from "../constants";
 
 const WhatWeDo = () => {
   return (
     <div id={navLinks[2].id}>
       <h1 className="mt-20 mb-4 p-6 text-[9.5rem] leading-[8rem] font-HN_Bold tracking-tighter">
-        The Resolved <br /> Experience.
+        {whatWeDoTitle[0]} <br></br> {whatWeDoTitle[1]}
       </h1>
-      <div className="flex flex-1 flex-row justify-between">
-        {contents1.map((text, index) => (
+      <div className="flex flex-row justify-between">
+        {whatWeDoContents.map((text, index) => (
           <li key={index} className="flex flex-col list-none p-6 ">
-            <div className={text.class}>
-              <h5 className="flex flex-1 my-2 pt-6 border-t-[1px] border-b-black text-xl font-HN_Medium">
+            <div>
+              <div className="flex flex-1 h-[1px] bg-black "></div>
+              <h5 className="flex flex-1 mb-2 mt-6 text-xl font-HN_Medium">
                 {text.title}
               </h5>
-              <p className="flex flex-1 pb-16 border-b-[1px] border-b-black font-HN_Regular">
+              <p className="flex flex-1 mb-16 font-HN_Regular text-lg">
                 {text.content}
               </p>
+              <div className="flex flex-1 h-[1px] bg-black "></div>
             </div>
           </li>
         ))}

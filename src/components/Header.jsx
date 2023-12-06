@@ -1,22 +1,20 @@
 import React from "react";
-import { rm_logo } from "../assets";
-import { navLinks, heroContent } from "../constants";
+import { rm_logo, colonPng } from "../assets";
+import { navLinks, logoName, heroTitle } from "../constants";
 import { Link } from "react-scroll";
 
 const Header = () => {
   return (
-    <div className="bg-orange flex flex-col text-white pt-6 px-10">
-      <div className="flex flex-row items-center cursor-pointer">
-        <a href="/" className="flex flex-row items-center">
-          <img
-            alt="logo"
-            src={rm_logo}
-            className="flex w-[4rem] h-[4rem]"
-          ></img>
-          <h3 href="/" className="flex text-2xl font-HN_Medium">
-            Resolved Mediation
-          </h3>
-        </a>
+    <div className="bg-orange flex flex-col text-white pt-6 px-10 z-100">
+      <div className="flex flex-row items-center">
+        <img
+          alt="logo"
+          src={rm_logo}
+          className="flex w-[4rem] h-[4rem] cursor-pointer"
+        ></img>
+        <h3 href="/" className="flex text-2xl font-HN_Medium cursor-pointer">
+          {logoName}
+        </h3>
         <ul className="list-none hidden xl:flex flex-1 justify-end text-2xl font-HN_Thin">
           {navLinks.map((nav, index) => (
             <li
@@ -37,9 +35,12 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <h1 className=" mt-10 text-[16rem] leading-[16rem] text-white font-HN_Bold tracking-tighter	">
-        Resolved:
-      </h1>
+      <div className="flex flex-row items-end">
+        <h1 className=" mt-10 text-[16rem] leading-[16rem] text-white font-HN_Bold tracking-tighter	">
+          {heroTitle}
+        </h1>
+        <img src={colonPng} alt="colon" className="h-[8rem] mb-8 ml-4"></img>
+      </div>
     </div>
   );
 };

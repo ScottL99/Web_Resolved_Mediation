@@ -4,7 +4,9 @@ import {
   WhatWeDo,
   WhereWeAre,
   WhoWeAre,
-  Services,
+  Questions,
+  Service,
+  Footer,
 } from "./components";
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
       <Hero />
       <WhoWeAre />
       <WhatWeDo />
-      <Services />
+      <Questions />
       <WhereWeAre />
+      <Service />
+      <Footer />
     </div>
   );
 }

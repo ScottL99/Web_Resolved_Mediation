@@ -3,6 +3,17 @@ import Hero from "./Hero";
 import WhatWeDo from "./WhatWeDo";
 import WhoWeAre from "./WhoWeAre";
 import WhereWeAre from "./WhereWeAre";
-import Services from "./Services";
+import Questions from "./Questions";
+import Service from "./Service";
+import Footer from "./Footer";
 
-export { Header, Hero, WhatWeDo, WhoWeAre, WhereWeAre, Services };
+export {
+  Header,
+  Hero,
+  WhatWeDo,
+  WhoWeAre,
+  WhereWeAre,
+  Questions,
+  Service,
+  Footer,
+};

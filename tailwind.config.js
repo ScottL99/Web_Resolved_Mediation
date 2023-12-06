@@ -19,6 +19,7 @@ export default {
         brown: "#452516",
         lightOrange: "#EB7926",
         darkOrange: "#EB3426",
+        charcoal: "#6d6e71",
       },
     },
   },
