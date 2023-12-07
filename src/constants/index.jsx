@@ -43,15 +43,13 @@ export const button = " Book an appointment";
 export const introPortrait = "Put the intro on here";
 
 export const introContent = [
-  {
-    content1: "We empower individuals",
-    content2: "through our expert-guided",
-    content3: "discussions in resolving",
-    content4: "disputes, delivering",
-    content5: "personalised services",
-    content6: "for adults and young people",
-    content7: "in relationship challenges.",
-  },
+  { content: "We empower individuals" },
+  { content: "through our expert-guided" },
+  { content: "discussions in resolving" },
+  { content: "disputes, delivering" },
+  { content: "personalised services" },
+  { content: "for adults and young people" },
+  { content: "in relationship challenges." },
 ];
 
 // Text on the "What we do".
@@ -112,24 +110,22 @@ export const questionCards = [
 export const whereWeAreTitle = ["A Collaborative", "Approach."];
 
 export const whereWeAreContent1 = [
-  {
-    content1: "We represent an alternative",
-    content2: "dispute resolution model in",
-    content3: "which FDRPs and collaborative",
-    content4: "family lawyers work together",
-    content5: "with parents in a transparent",
-    content6: "and open manner.",
-    content7: "",
-  },
+  { content: "We represent an alternative" },
+  { content: "dispute resolution model in" },
+  { content: "which FDRPs and collaborative" },
+  { content: "family lawyers work together" },
+  { content: "with parents in a transparent" },
+  { content: "and open manner." },
 ];
 
 export const whereWeAreContent2 = [
   {
-    content1:
+    content:
       "Resolved Mediation wholeheartedly endorse collaborative practice and partnering with various services, such as lawyers, child consultants, and counsellors, to address the diverse needs of parents, families, and individuals confronting conflict.",
-    content2:
+  },
+  {
+    content:
       "During your initial meeting, we’ll provide you with comprehensive information about your options and associated costs.",
-    content3: "",
   },
 ];
 
@@ -172,9 +168,10 @@ export const servicesStyle = {
   dashedLineH:
     "w-[20rem] border-t-4  border-stone-300 border-dashed col-span-3",
   dashedLineV: "h-[200px] my-10 border-r-4 border-stone-300 border-dashed",
-  iconDiv: "flex flex-col my-10 mx-2 justify-center items-center col-span-3",
-  icon: "flex w-[3.5rem] h-[3.5rem] mx-4 drop-shadow-2xl object-contain ",
-  text: " bg-charcoal text-white text-2xl leading-5 font-HN_Bold px-4 py-1 rounded-xl ",
+  iconDiv:
+    "flex flex-col my-10 mx-2 justify-center items-center col-span-3 group",
+  icon: "flex w-[3.5rem] h-[3.5rem] mx-4 drop-shadow-2xl object-contain group-hover:scale-105 transition-all duration-500 cursor-pointer",
+  text: " bg-charcoal text-white text-2xl leading-5 font-HN_Bold px-4 py-1 rounded-xl group-hover:scale-105 transition-all duration-500 cursor-pointer",
 };
 
 // Text on the Footer

@@ -1,17 +1,22 @@
 import { picture1 } from "../assets";
 import { arrow_icon } from "../assets";
 import { questionCards } from "../constants";
+import { motion } from "framer-motion";
 
 import React from "react";
 
 const Questions = () => {
   return (
     <div className="flex flex-col my-10 p-5 z-0 overflow-hidden mx-20">
-      <img
+      <motion.img
         alt="picture1"
         src={picture1}
         className="flex flex-1 object-cover m-1 max-h-[75vh]"
-      ></img>
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.75, delay: 0.25 }}
+        viewport={{ once: true }}
+      ></motion.img>
       <div className="flex flex-row">
         {questionCards.map((card) => (
           <div

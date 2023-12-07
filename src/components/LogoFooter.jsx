@@ -32,7 +32,7 @@ const LogoFooter = () => {
               <img
                 src={i.src}
                 alt={i.alt}
-                className="w-[3.25rem] mr-[10px]"
+                className="w-[3.25rem] mr-[10px] hover:scale-110 transition-all hover:bg-orange rounded-xl"
               ></img>
             </a>
           ))}

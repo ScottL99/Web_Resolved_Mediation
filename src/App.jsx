@@ -11,16 +11,18 @@ import {
 
 function App() {
   return (
-    <div className="">
-      <Header />
-      <Hero />
+    <>
+      <div className="h-[100vh]">
+        <Header />
+        <Hero />
+      </div>
       <WhoWeAre />
       <WhatWeDo />
       <Questions />
       <WhereWeAre />
       <Service />
       <Footer />
-    </div>
+    </>
   );
 }
 
