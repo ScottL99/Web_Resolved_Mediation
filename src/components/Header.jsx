@@ -32,25 +32,25 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <div className="flex flex-row items-end">
-        <motion.h1
-          className=" mt-10 text-[16rem] leading-[16rem] text-white font-HN_Bold tracking-tighter"
-          inherit={{
-            opacity: 0,
-            y: 100,
-          }}
-          animate={{
-            opacity: 100,
-            y: 0,
-          }}
-          transition={{
-            duration: 1000,
-          }}
-        >
+      <motion.div
+        className="flex flex-row items-end"
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        animate={{
+          opacity: 100,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.7,
+        }}
+      >
+        <h1 className=" mt-10 text-[16rem] leading-[16rem] text-white font-HN_Bold tracking-tighter">
           {heroTitle}
-        </motion.h1>
+        </h1>
         <img src={colonPng} alt="colon" className="h-[8rem] mb-8 ml-4"></img>
-      </div>
+      </motion.div>
     </div>
   );
 };
