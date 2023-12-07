@@ -1,4 +1,4 @@
-import { servicesStyle } from "../constants";
+import { servicesStyle, serviceContent } from "../constants";
 import {
   servicesIcon1,
   servicesIcon2,
@@ -10,9 +10,9 @@ import {
 
 const Service = () => {
   return (
-    <div className="flex overflow-hidden">
+    <div className="flex overflow-hidden mx-20">
       <div className="flex-1 my-10  border-y-4  border-stone-300 border-dashed ">
-        <div className="grid grid-cols-5 justify-items-center content-center px-20">
+        <div className="grid grid-cols-11 justify-items-center content-center px-20">
           <div className={servicesStyle.iconDiv}>
             <div className="flex flex-row mb-2">
               <img
@@ -28,8 +28,8 @@ const Service = () => {
               ></img>
             </div>
             <div className="h-2"></div>
-            <p className={servicesStyle.text}>Phone or email enquiry</p>
-            <p className={servicesStyle.text}>is no charge</p>
+            <p className={servicesStyle.text}>{serviceContent[0].content1}</p>
+            <p className={servicesStyle.text}>{serviceContent[0].content2}</p>
           </div>
           <div className={servicesStyle.dashedLineV}></div>
           <div className={servicesStyle.iconDiv}>
@@ -39,8 +39,8 @@ const Service = () => {
               className={servicesStyle.icon}
             ></img>
             <div className="h-3"></div>
-            <p className={servicesStyle.text}>Extended enquiry at</p>
-            <p className={servicesStyle.text}>Resolved Mediation</p>
+            <p className={servicesStyle.text}>{serviceContent[1].content1}</p>
+            <p className={servicesStyle.text}>{serviceContent[1].content2}</p>
           </div>
           <div className={servicesStyle.dashedLineV}></div>
           <div className={servicesStyle.iconDiv}>
@@ -49,6 +49,9 @@ const Service = () => {
               alt="icon4"
               className={servicesStyle.icon}
             ></img>
+            <div className="h-3"></div>
+            <p className={servicesStyle.text}>{serviceContent[2].content1}</p>
+            <p className={servicesStyle.text}>{serviceContent[2].content2}</p>
           </div>
           <div className={servicesStyle.dashedLineH}></div>
           <div></div>
@@ -61,6 +64,10 @@ const Service = () => {
               alt="icon3"
               className={servicesStyle.icon}
             ></img>
+            <div className="h-3"></div>
+            <p className={servicesStyle.text}>{serviceContent[3].content1}</p>
+            <p className={servicesStyle.text}>{serviceContent[3].content2}</p>
+            <p className={servicesStyle.text}>{serviceContent[3].content3}</p>
           </div>
           <div className={servicesStyle.dashedLineV}></div>
           <div className={servicesStyle.iconDiv}>
@@ -69,6 +76,10 @@ const Service = () => {
               alt="icon5"
               className={servicesStyle.icon}
             ></img>
+            <div className="h-3"></div>
+            <p className={servicesStyle.text}>{serviceContent[4].content1}</p>
+            <p className={servicesStyle.text}>{serviceContent[4].content2}</p>
+            <p className={servicesStyle.text}>{serviceContent[4].content3}</p>
           </div>
           <div className={servicesStyle.dashedLineV}></div>
           <div className={servicesStyle.iconDiv}>
@@ -77,6 +88,9 @@ const Service = () => {
               alt="icon6"
               className={servicesStyle.icon}
             ></img>
+            <div className="h-3"></div>
+            <p className={servicesStyle.text}>{serviceContent[5].content1}</p>
+            <p className={servicesStyle.text}>{serviceContent[5].content2}</p>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { navLinks, introPortrait, introContent } from "../constants";
 
 const WhoWeAre = () => {
   return (
-    <div className="flex flex-col" id={navLinks[0].id}>
+    <div className="flex flex-col mx-20" id={navLinks[0].id}>
       <div className="flex flex-1 justify-between mt-10 p-10 bg-gray">
         <div className="flex flex-1 group [prespective:1000px] overflow-hidden ">
           <div className=" flex-1 relative  group transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">

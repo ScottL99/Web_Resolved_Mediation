@@ -11,7 +11,7 @@ import {
 
 function App() {
   return (
-    <div className="px-20 ">
+    <div className="">
       <Header />
       <Hero />
       <WhoWeAre />

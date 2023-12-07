@@ -2,8 +2,8 @@ import { whatWeDoContents, navLinks, whatWeDoTitle } from "../constants";
 
 const WhatWeDo = () => {
   return (
-    <div id={navLinks[2].id}>
-      <h1 className="mt-20 mb-4 p-6 text-[9.5rem] leading-[8rem] font-HN_Bold tracking-tighter">
+    <div id={navLinks[2].id} className="mx-20">
+      <h1 className=" mt-20 mb-4 p-6 text-[9.5rem] leading-[8rem] font-HN_Bold tracking-tighter">
         {whatWeDoTitle[0]} <br></br> {whatWeDoTitle[1]}
       </h1>
       <div className="flex flex-row justify-between">

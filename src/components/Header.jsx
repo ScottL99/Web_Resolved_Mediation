@@ -1,25 +1,23 @@
 import React from "react";
-import { rm_logo, colonPng } from "../assets";
-import { navLinks, logoName, heroTitle } from "../constants";
+import { colonPng } from "../assets";
+import { navLinks, heroTitle } from "../constants";
 import { Link } from "react-scroll";
+import LogoHeader from "./LogoHeader";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="bg-orange flex flex-col text-white pt-6 px-10 z-100">
+    <div
+      className="bg-orange flex flex-col text-white pt-6 px-10 mx-20"
+      id="header"
+    >
       <div className="flex flex-row items-center">
-        <img
-          alt="logo"
-          src={rm_logo}
-          className="flex w-[4rem] h-[4rem] cursor-pointer"
-        ></img>
-        <h3 href="/" className="flex text-2xl font-HN_Medium cursor-pointer">
-          {logoName}
-        </h3>
+        <LogoHeader />
         <ul className="list-none hidden xl:flex flex-1 justify-end text-2xl font-HN_Thin">
           {navLinks.map((nav, index) => (
             <li
-              key={nav.id}
-              className="mr-5 transform-all group hover:text-black cursor-pointer"
+              key={index}
+              className="cursor-pointer border-2 border-white/0 hover:border-white flex px-3 py-1 transition-all duration-500"
             >
               <Link
                 to={nav.id}
@@ -29,16 +27,28 @@ const Header = () => {
                 delay={100}
               >
                 <span> {nav.title} </span>
-                <div className=" w-full h-0.5 bg-black scale-x-0 group-hover:scale-x-100 transition-all" />
               </Link>
             </li>
           ))}
         </ul>
       </div>
       <div className="flex flex-row items-end">
-        <h1 className=" mt-10 text-[16rem] leading-[16rem] text-white font-HN_Bold tracking-tighter	">
+        <motion.h1
+          className=" mt-10 text-[16rem] leading-[16rem] text-white font-HN_Bold tracking-tighter"
+          inherit={{
+            opacity: 0,
+            y: 100,
+          }}
+          animate={{
+            opacity: 100,
+            y: 0,
+          }}
+          transition={{
+            duration: 1000,
+          }}
+        >
           {heroTitle}
-        </h1>
+        </motion.h1>
         <img src={colonPng} alt="colon" className="h-[8rem] mb-8 ml-4"></img>
       </div>
     </div>

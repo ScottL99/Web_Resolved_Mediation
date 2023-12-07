@@ -1,3 +1,5 @@
+import { facebook_icon, instagram_icon, linkedin_icon } from "../assets";
+
 // Logo
 export const logoName = "Resolved Mediation";
 
@@ -109,30 +111,110 @@ export const questionCards = [
 // // Text on the "Where we are."
 export const whereWeAreTitle = ["A Collaborative", "Approach."];
 
-// fix it later:
-export const whereWeAreContent = [
+export const whereWeAreContent1 = [
   {
-    content1: "We empower individuals",
-    content2: "through our expert-guided",
-    content3: "discussions in resolving",
-    content4: "disputes, delivering",
-    content5: "personalised services",
-    content6: "for adults and young people",
-    content7: "in relationship challenges.",
+    content1: "We represent an alternative",
+    content2: "dispute resolution model in",
+    content3: "which FDRPs and collaborative",
+    content4: "family lawyers work together",
+    content5: "with parents in a transparent",
+    content6: "and open manner.",
+    content7: "",
   },
 ];
 
-export const servicesGrid = {
-  id: "",
-  img: "",
+export const whereWeAreContent2 = [
+  {
+    content1:
+      "Resolved Mediation wholeheartedly endorse collaborative practice and partnering with various services, such as lawyers, child consultants, and counsellors, to address the diverse needs of parents, families, and individuals confronting conflict.",
+    content2:
+      "During your initial meeting, we’ll provide you with comprehensive information about your options and associated costs.",
+    content3: "",
+  },
+];
+
+// Text on the "services"
+export const serviceContent = [
+  {
+    content1: "Phone or email enquiry",
+    content2: "is no charge",
+    content3: "",
+  },
+  {
+    content1: "Extended enquiry at",
+    content2: "Resolved Mediation",
+    content3: "",
+  },
+  {
+    content1: "Extended enquiry",
+    content2: "on phone",
+    content3: "",
+  },
+  {
+    content1: "Initial Assessment Meeting",
+    content2: "FDFP | Collaborative Practice",
+    content3: "at Resolved Mediation",
+  },
+  {
+    content1: "Initial Assessment Meeting",
+    content2: "FDFP | Collaborative Practice",
+    content3: "Video Conference",
+  },
+  {
+    content1: "Mediation | Collaborative ",
+    content2: "Practice Session",
+    content3: "",
+  },
+];
+
+// Style on the service icons （don't change it unless you want to modify the style)
+export const servicesStyle = {
+  dashedLineH:
+    "w-[20rem] border-t-4  border-stone-300 border-dashed col-span-3",
+  dashedLineV: "h-[200px] my-10 border-r-4 border-stone-300 border-dashed",
+  iconDiv: "flex flex-col my-10 mx-2 justify-center items-center col-span-3",
+  icon: "flex w-[3.5rem] h-[3.5rem] mx-4 drop-shadow-2xl object-contain ",
+  text: " bg-charcoal text-white text-2xl leading-5 font-HN_Bold px-4 py-1 rounded-xl ",
 };
 
-// Style on the service icons
-export const servicesStyle = {
-  dashedLineH: "w-[500px] border-t-4  border-stone-300 border-dashed",
-  dashedLineV: "h-[200px] my-10 mx-2 border-r-4 border-stone-300 border-dashed",
-  iconDiv:
-    "flex flex-col  w-[250px] h-[250px] my-10 mx-2 justify-center items-center ",
-  icon: "w-[3.25rem] mx-4 drop-shadow-2xl",
-  text: " bg-charcoal text-white text-lg leading-5 font-HN_Bold px-4 pb-[1px] rounded-xl ",
-};
+// Text on the Footer
+export const followUs = "Follow us:";
+
+export const findUs = "Find us:";
+
+export const address = [
+  "Beckwith Business Park",
+  "30-38 Tanunda Road",
+  "Nuriootpa",
+  "South Australia  5355",
+];
+
+export const contactInfo = [
+  {
+    title: "Telephone: ",
+    info: "08 8151 1339",
+  },
+  {
+    title: "Email: ",
+    info: "resolve_mediate@icloud.com",
+  },
+];
+
+// Link of Social media
+export const socialMedia = [
+  {
+    src: linkedin_icon,
+    alt: "linkedin_icon",
+    url: "#",
+  },
+  {
+    src: instagram_icon,
+    alt: "instagram_icon",
+    url: "#",
+  },
+  {
+    src: facebook_icon,
+    alt: "facebook_icon",
+    url: "#",
+  },
+];

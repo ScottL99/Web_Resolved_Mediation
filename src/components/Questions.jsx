@@ -6,7 +6,7 @@ import React from "react";
 
 const Questions = () => {
   return (
-    <div className="flex flex-col my-10 p-5 z-0 overflow-hidden">
+    <div className="flex flex-col my-10 p-5 z-0 overflow-hidden mx-20">
       <img
         alt="picture1"
         src={picture1}
