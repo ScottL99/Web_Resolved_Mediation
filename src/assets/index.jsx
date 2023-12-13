@@ -1,7 +1,6 @@
 import rm_logo_header from "./rm_logo_header.png";
 import rm_logo_footer from "./rm_logo_footer.png";
 import heroImg from "./hero.jpg";
-import portrait from "./portrait_Elana_Rudnick.jpeg";
 import squarePortrait from "./portrait_Elana_Rudnick_square.png";
 import arrow_icon from "./arrow_icon.png";
 import picture1 from "./picture1.jpg";
@@ -21,7 +20,6 @@ export {
   rm_logo_header,
   rm_logo_footer,
   heroImg,
-  portrait,
   squarePortrait,
   arrow_icon,
   picture1,

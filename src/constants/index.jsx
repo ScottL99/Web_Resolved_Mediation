@@ -40,7 +40,9 @@ export const heroContent = "Ensuring you get the most out of life.";
 export const button = " Book an appointment";
 
 // Text on the "Who we are."
-export const introPortrait = "Put the intro on here";
+export const introPortrait = [
+  "Dr Elena Rudnik, PhD, is a distinguished Family Dispute Resolution Practitioner and Mediator with over two decades of experience. Her impressive academic credentials include a PhD & BA in psychology, a Master's in Grief and Palliative Counselling, and a Graduate Diploma in Family Dispute Resolution. Currently pursuing a Master of Social Work, Elena is a member of prestigious professional associations, including the Australian Association of Social Workers (AASW), Mediation Institute (MI), and the International Academy of Collaborative Professionals (IACP).  Beyond private practice, Dr. Rudnik has significantly contributed to the Federal and State Government, University, and not-for-profit sectors, showcasing a holistic and collaborative approach dedicated to facilitating positive transformations in the lives of those she serves.",
+];
 
 export const introContent = [
   { content: "We empower individuals" },
@@ -75,7 +77,7 @@ export const whatWeDoContents = [
 
 export const questionCards = [
   {
-    id: 1,
+    id: 0,
     title1: "What does a",
     title2: "Family Dispute Resolution",
     title3: "Practioner do?",
@@ -83,7 +85,7 @@ export const questionCards = [
       "A Family Dispute Resolution Practitioner (FDRP) plays a vital role in helping separating families effectively communicate and identify common ground on parenting matters and property division. Our primary aim is to facilitate amicable resolutions without resorting to legal proceedings.",
   },
   {
-    id: 2,
+    id: 1,
     title1: "Why Family Dispute",
     title2: "Resolution (FDR)?",
     content1:
@@ -92,7 +94,7 @@ export const questionCards = [
       "Unless an exemption is applicable, individuals pursuing parenting matters in a family law court must obtain a Section 60I Certificate, issued by an FDR practitioner. This certificate serves as evidence of their genuine effort to resolve disputes through FDR, as mandated by Section 60I of the Family Law Act 1975. It is important to note that FDR proceedings are confidential and not admissible under the Family Law Act, provided they are conducted by an accredited FDR practitioner or one authorized by a court. Other forms of mediation do not enjoy the same protection under the Family Law Act.",
   },
   {
-    id: 3,
+    id: 2,
     title1: "The difference between",
     title2: "a Mediator and a Family",
     title3: "Dispute Resolution",
@@ -132,46 +134,78 @@ export const whereWeAreContent2 = [
 // Text on the "services"
 export const serviceContent = [
   {
+    id: 0,
     content1: "Phone or email enquiry",
     content2: "is no charge",
     content3: "",
+    time: "",
+    price: "Free",
+    hiddenContent:
+      "Phone or email communication to clarify the appropriateness of service referral and scheduling of an initial meeting. ",
   },
   {
+    id: 1,
     content1: "Extended enquiry at",
     content2: "Resolved Mediation",
     content3: "",
+    time: "30 Minutes",
+    price: "$80",
+    hiddenContent:
+      "Discuss dispute resolution process options for parenting, property or general conflict.",
   },
   {
+    id: 2,
     content1: "Extended enquiry",
     content2: "on phone",
     content3: "",
+    price: "",
+    time: "30 Minutes",
+    price: "$80",
+    hiddenContent:
+      "Discuss dispute resolution process options for parenting, property or general conflict.",
   },
   {
+    id: 3,
     content1: "Initial Assessment Meeting",
     content2: "FDFP | Collaborative Practice",
     content3: "at Resolved Mediation",
+    price: "",
+    time: "1 Hour 20 Minutes",
+    price: "$220",
+    hiddenContent:
+      "Initial meeting with an individual to explore conflict and suitability of Family Dispute Resolution, Mediation or Collaborative Practice.  Includes discussion of Section 60i certificates and strategies to engage other parties.We will also explore what team of professionals is required to support the family.  The team may include legal, financial, family and child consultants.",
   },
   {
+    id: 4,
     content1: "Initial Assessment Meeting",
     content2: "FDFP | Collaborative Practice",
     content3: "Video Conference",
+    time: "1 Hour 20 Minutes",
+    price: "$220",
+    hiddenContent:
+      "Initial meeting with an individual to explore conflict and suitability of Family Dispute Resolution, Mediation or Collaborative Practice.  Includes discussion of Section 60i certificates and strategies to engage other parties.We will also explore what team of professionals is required to support the family.  The team may include legal, financial, family and child consultants.",
   },
   {
+    id: 5,
     content1: "Mediation | Collaborative ",
     content2: "Practice Session",
     content3: "",
+    time: "2-4 Hours ",
+    price: "$160 p/hour",
+    hiddenContent: "",
   },
 ];
 
 // Style on the service icons （don't change it unless you want to modify the style)
 export const servicesStyle = {
   dashedLineH:
-    "w-[20rem] border-t-4  border-stone-300 border-dashed col-span-3",
+    "w-[8rem] sm:w-[14rem] xl:w-[20rem] xxl:w-[26rem] border-t-4  border-stone-300 border-dashed col-span-3",
   dashedLineV: "h-[200px] my-10 border-r-4 border-stone-300 border-dashed",
-  iconDiv:
-    "flex flex-col my-10 mx-2 justify-center items-center col-span-3 group",
-  icon: "flex w-[3.5rem] h-[3.5rem] mx-4 drop-shadow-2xl object-contain group-hover:scale-105 transition-all duration-500 cursor-pointer",
-  text: " bg-charcoal text-white text-2xl leading-5 font-HN_Bold px-4 py-1 rounded-xl group-hover:scale-105 transition-all duration-500 cursor-pointer",
+  iconDiv: "flex flex-col justify-center items-center col-span-3 group",
+  icon: "flex w-[2.5rem] h-[2.5rem] sm:w-[3.5rem] sm:h-[3.5rem] mx-4 drop-shadow-2xl object-contain group-hover:scale-105 transition-all duration-500 cursor-pointer",
+  text: " bg-charcoal text-white text-center sm:text-left text-[10px] sm:text-sm xl:text-xl xxl:text-2xl lg:leading-3 xl:leading-5 font-HN_Bold px-2 py-[1px] sm:px-3 sm:py-1 rounded-xl group-hover:scale-105 transition-all duration-500 cursor-pointer",
+  text_fee:
+    "text-orange text-center sm:text-left text-sm xl:text-xl xxl:text-2xl lg:leading-3 xl:leading-5 font-HN_Bold mt-1 group-hover:scale-105 transition-all duration-500 cursor-pointer",
 };
 
 // Text on the Footer

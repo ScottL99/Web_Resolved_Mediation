@@ -2,6 +2,18 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "720px",
+
+      lg: "1024px",
+
+      xl: "1440px",
+
+      xxl: "1920px",
+
+      xx: "2020px",
+    },
+
     extend: {
       fontFamily: {
         HN_Regular: ["HN01", "sans-serif"],
