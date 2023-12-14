@@ -23,7 +23,7 @@ const Service = () => {
         <button
           className={`${
             toggle ? "translate-y-0" : "-translate-y-full"
-          } rounded-3xl absolute flex flex-1 bg-charcoal/90 text-white font-HN_Regular text:lg sm:text-xl lg:text-2xl  h-full w-full z-10 top-0 transition-all duration-500 px-20 text-left items-center justify-center `}
+          } rounded-3xl absolute flex flex-1 bg-charcoal/90 text-white font-HN_Regular text:lg sm:text-xl lg:text-2xl  h-full w-full z-10 top-0 transition-all duration-500 px-5 sm:px-20 text-left items-center justify-center `}
           onClick={() => setToggle((prog) => !prog)}
         >
           {serviceContent[contentNum].hiddenContent}

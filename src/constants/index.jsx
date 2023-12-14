@@ -25,6 +25,9 @@ export const navLinks = [
     title: "|",
     url: "",
   },
+];
+
+export const navMap = [
   {
     id: "where_we_are",
     title: "Where we are.",

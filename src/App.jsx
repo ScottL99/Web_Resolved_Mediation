@@ -1,27 +1,9 @@
-import {
-  Header,
-  Hero,
-  WhatWeDo,
-  WhereWeAre,
-  WhoWeAre,
-  Questions,
-  Service,
-  Footer,
-} from "./components";
+import { HomePage } from "./components/HomePage";
 
 function App() {
   return (
     <>
-      <div>
-        <Header />
-        <Hero />
-      </div>
-      <WhoWeAre />
-      <WhatWeDo />
-      <Questions />
-      <WhereWeAre />
-      <Service />
-      <Footer />
+      <HomePage />
     </>
   );
 }

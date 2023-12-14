@@ -1,6 +1,6 @@
 import React from "react";
-import { colonPng } from "../assets";
-import { navLinks, heroTitle } from "../constants";
+import { colonPng, resolved_mediation_map } from "../assets";
+import { navLinks, heroTitle, navMap, address } from "../constants";
 import { Link } from "react-scroll";
 import LogoHeader from "./LogoHeader";
 import { motion } from "framer-motion";
@@ -11,11 +11,30 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   const closeMenu = () => setToggle(false);
 
+  const [mapToggle, setMapToggle] = useState(false);
+  const showMap = () => setMapToggle(true);
+  const closeMap = () => setMapToggle(false);
+
   return (
     <header
-      className="bg-orange flex flex-col text-white pt-6 px-4 sm:px-6 lg:px-10 mx-4 sm:mx-12 lg:mx-20"
+      className="bg-orange flex flex-col text-white pt-6 px-4 sm:px-6 lg:px-10 mx-4 sm:mx-12 lg:mx-20 relative"
       id="header"
     >
+      <button
+        className={` ${
+          mapToggle ? "translate-x-0" : "translate-x-[100vw]"
+        } transition-all duration-1000 flex flex-col items-center absolute bg-gradient-to-r from-charcoal/95 to-black z-20 rounded-lg border-2 border-white top-24 right-0 overflow-hidden p-2 min-h-[43vh]`}
+        onClick={() => setMapToggle((prog) => !prog)}
+      >
+        <img
+          src={resolved_mediation_map}
+          alt="map"
+          className="flex flex-1 object-cover  max-h-[80vh] "
+        ></img>
+        <p className="mt-2 font-HN_Medium text-sm sm:text-base lg:text-lg">
+          {address}
+        </p>
+      </button>
       <nav className="flex flex-row items-center">
         <LogoHeader />
         <ul className="list-none hidden lg:flex flex-1 justify-end lg:text-xl xl:text-2xl font-HN_Thin">
@@ -31,14 +50,23 @@ const Header = () => {
                 offset={-20}
                 duration={700}
                 delay={100}
+                onClick={closeMap}
               >
                 <span> {nav.title} </span>
               </Link>
             </li>
           ))}
+          <li
+            className="cursor-pointer border-2 border-white/0 hover:border-white flex lg:px-2 xl:px-3 py-1 
+              transition-all duration-500"
+          >
+            <button onClick={() => setMapToggle((prog) => !prog)}>
+              {navMap[0].title}
+            </button>
+          </li>
         </ul>
         <button
-          className="flex flex-1 lg:hidden justify-end z-20"
+          className="flex flex-1 lg:hidden justify-end z-50"
           onClick={() => setToggle((prog) => !prog)}
         >
           {toggle ? (
@@ -50,7 +78,7 @@ const Header = () => {
         <div
           className={`${
             toggle ? "translate-y-0" : "-translate-y-full"
-          } absolute w-full h-[50vh] bg-orange/95 right-0 z-10 transition-all duration-1000 top-0 lg:hidden p-20 text-2xl`}
+          } absolute w-full h-[64vh] sm:h-[59vh] bg-orange/95 right-0 z-30 transition-all duration-1000 top-0 lg:hidden p-20 text-2xl`}
         >
           <ul className="list-none flex flex-1 flex-col justify-center items-center font-HN_Thin">
             <li
@@ -68,8 +96,7 @@ const Header = () => {
                 <span> {navLinks[0].title} </span>
               </Link>
             </li>
-          </ul>
-          <ul className="list-none flex flex-1 flex-col justify-center items-center font-HN_Thin">
+
             <li
               className="flex m-4 p-2 cursor-pointer leading-4 border-b-white/50 border-2 border-white/0 hover:border-white
               transition-all duration-500"
@@ -85,23 +112,20 @@ const Header = () => {
                 <span> {navLinks[2].title} </span>
               </Link>
             </li>
-            <ul className="list-none flex flex-1 flex-col justify-center items-center font-HN_Thin">
-              <li
-                className="flex m-4 p-2 cursor-pointer leading-4 border-b-white/50 border-2 border-white/0 hover:border-white
+            <li
+              className="flex m-4 p-2 cursor-pointer leading-4 border-b-white/50 border-2 border-white/0 hover:border-white
               transition-all duration-500"
+            >
+              <button
+                onClick={() => {
+                  showMap();
+                  closeMenu();
+                }}
               >
-                <Link
-                  to={navLinks[4].id}
-                  smooth={true}
-                  offset={-20}
-                  duration={700}
-                  delay={100}
-                  onClick={closeMenu}
-                >
-                  <span> {navLinks[4].title} </span>
-                </Link>
-              </li>
-            </ul>
+                {" "}
+                {navMap[0].title}{" "}
+              </button>
+            </li>
           </ul>
         </div>
       </nav>

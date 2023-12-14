@@ -6,7 +6,7 @@ import { useState } from "react";
 const WhoWeAre = () => {
   return (
     <motion.section
-      className="flex flex-col mx-6 sm:mx-12 lg:mx-2 :"
+      className="flex flex-col mx-4 sm:mx-12 lg:mx-20 "
       id={navLinks[0].id}
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ const WhoWeAre = () => {
           ))}
         </div>
         <div className="lg:hidden flex flex-1 absolute opacity-0 group-hover/mobile:opacity-100 bg-charcoal h-full top-0 right-0 transition-all duration-500 ">
-          <p className="flex flex-1 text-white text-sm sm:text-lg font-HN_Regular p-5 sm:p-16 ">
+          <p className="flex flex-1 text-white text-xs xs:text-sm sm:text-lg font-HN_Regular p-5 sm:p-16 ">
             {introPortrait[0]}
           </p>
         </div>

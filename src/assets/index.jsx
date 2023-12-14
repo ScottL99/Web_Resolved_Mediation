@@ -15,6 +15,7 @@ import servicesIcon6 from "./services_icon6.png";
 import linkedin_icon from "./linkedin_icon.png";
 import instagram_icon from "./instagram_icon.png";
 import facebook_icon from "./facebook_icon.png";
+import resolved_mediation_map from "./resolved_mediation_map.png";
 
 export {
   rm_logo_header,
@@ -34,4 +35,5 @@ export {
   linkedin_icon,
   instagram_icon,
   facebook_icon,
+  resolved_mediation_map,
 };

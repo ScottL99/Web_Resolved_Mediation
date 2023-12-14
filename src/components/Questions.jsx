@@ -17,7 +17,7 @@ const Questions = () => {
       <button
         className={`${
           toggle ? "translate-y-0" : "-translate-y-full"
-        } absolute flex flex-1 lg:hidden bg-charcoal text-white font-HN_Regular text-sm sm:text-xl  h-full z-10 top-0 transition-all duration-500 px-5 sm:px-10 text-left items-center`}
+        } absolute flex flex-1 lg:hidden bg-charcoal text-white font-HN_Regular text-xs xs:text-sm sm:text-xl  h-full z-10 top-0 transition-all duration-500 px-5 sm:px-10 text-left items-center`}
         onClick={() => setToggle((prog) => !prog)}
       >
         <p>
@@ -55,7 +55,7 @@ const Questions = () => {
               className="hidden lg:flex flex-1 absolute lg:-top-2 lg:left-0  w-full opacity-0 bg-white 
             group-hover:opacity-80  group-hover:-translate-y-full lg:h-[640px] xl:h-[800px] xxl:min-h-[960px] transition-all duration-500 "
             >
-              <p className="flex flex-1 justify-center items-center font-HN_Regular lg:text-sm xl:text-lg px-2 xl:p-6  text-black">
+              <p className="flex flex-1 justify-center items-center font-HN_Regular text-sm xl:text-lg px-2 xl:p-6  text-black">
                 {card.content1}
                 <br></br>
                 <br></br>
