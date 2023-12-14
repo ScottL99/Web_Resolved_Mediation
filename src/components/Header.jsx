@@ -78,7 +78,7 @@ const Header = () => {
         <div
           className={`${
             toggle ? "translate-y-0" : "-translate-y-full"
-          } absolute w-full h-[64vh] sm:h-[59vh] bg-orange/95 right-0 z-30 transition-all duration-1000 top-0 lg:hidden p-20 text-2xl`}
+          } absolute w-full h-[64vh] sm:h-[59vh] bg-orange/95 right-0 z-30 transition-all duration-1000 top-0 lg:hidden py-20 text-2xl`}
         >
           <ul className="list-none flex flex-1 flex-col justify-center items-center font-HN_Thin">
             <li
