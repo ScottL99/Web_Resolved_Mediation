@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.videoContainer {
+  z-index: -1;
+}
+
+.video {
+  z-index: -9999;
+}
+
 @font-face {
   font-family: HN01;
   src: url(./fonts/HelveticaNeue-01.ttf);

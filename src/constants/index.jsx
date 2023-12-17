@@ -1,4 +1,11 @@
-import { facebook_icon, instagram_icon, linkedin_icon } from "../assets";
+import {
+  facebook_icon,
+  instagram_icon,
+  linkedin_icon,
+  Facebook_icon_gray,
+  Instagram_icon_gray,
+  Linkedin_icon_gray,
+} from "../assets";
 
 // Logo
 export const logoName = "Resolved Mediation";
@@ -6,7 +13,7 @@ export const logoName = "Resolved Mediation";
 // NavBar (menu), change the "title" only
 export const navLinks = [
   {
-    id: "who_we_are",
+    id: "firstSection",
     title: "Who we are.",
     url: "WhoWeAre",
   },
@@ -16,7 +23,7 @@ export const navLinks = [
     url: "",
   },
   {
-    id: "what_we_do",
+    id: "secondSection",
     title: "What we do.",
     url: "WhatWeDo",
   },
@@ -29,7 +36,7 @@ export const navLinks = [
 
 export const navMap = [
   {
-    id: "where_we_are",
+    id: "MapSection",
     title: "Where we are.",
     url: "",
   },
@@ -112,7 +119,7 @@ export const questionCards = [
 ];
 
 // // Text on the "Where we are."
-export const whereWeAreTitle = ["A Collaborative", "Approach."];
+export const whereWeAreTitle = ["A Collaborative", "A", "pproach."];
 
 export const whereWeAreContent1 = [
   { content: "We represent an alternative" },
@@ -248,6 +255,25 @@ export const socialMedia = [
   },
   {
     src: facebook_icon,
+    alt: "facebook_icon",
+    url: "#",
+  },
+];
+
+// Link of Social media (mobile)
+export const socialMediaMobile = [
+  {
+    src: Linkedin_icon_gray,
+    alt: "linkedin_icon",
+    url: "#",
+  },
+  {
+    src: Instagram_icon_gray,
+    alt: "instagram_icon",
+    url: "#",
+  },
+  {
+    src: Facebook_icon_gray,
     alt: "facebook_icon",
     url: "#",
   },

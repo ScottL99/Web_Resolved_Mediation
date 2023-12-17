@@ -12,8 +12,6 @@ export default {
       xl: "1440px",
 
       xxl: "1920px",
-
-      xx: "2020px",
     },
 
     extend: {

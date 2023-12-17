@@ -1,4 +1,4 @@
-import LogoFooter from "./LogoFooter";
+import { LogoFooter } from "./subComponents";
 import { contactInfo, address, findUs } from "../constants";
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
           {address.map((add, index) => (
             <p
               key={index}
-              className="flex flex-1 text-base sm:text-xl leading-3 sm:leading-4 text-white font-HN_Light border-b-2 border-gray/50 hover:text-orange transition-all"
+              className="flex text-base leading-5 sm:text-lg sm:leading-[22px] lg:text-xl lg:leading-6 text-white font-HN_Light border-b-[1px] border-gray hover:text-orange transition-all"
             >
               {add}
             </p>
@@ -25,7 +25,7 @@ const Footer = () => {
           {contactInfo.map((info) => (
             <p
               key={info.title}
-              className="flex flex-1 text- sm:text-xl leading-3 sm:leading-4 text-white font-HN_Light  border-b-2 border-gray/50 hover:text-orange transition-all"
+              className="flex ext-base leading-5 sm:text-lg sm:leading-[22px] lg:text-xl lg:leading-6 text-white font-HN_Light  border-b-[1px] border-gray hover:text-orange transition-all"
             >
               <span className="font-HN_Bold mr-2"> {`${info.title}`} </span>
               {info.info}
