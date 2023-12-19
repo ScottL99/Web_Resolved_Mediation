@@ -1,4 +1,4 @@
-import { Services } from "./subComponents";
+import { Services, Policy } from "./subComponents";
 import {
   navLinks,
   whereWeAreTitle,
@@ -9,9 +9,12 @@ import { motion } from "framer-motion";
 
 const WhatWeDo = () => {
   return (
-    <section className="lg:mx-20" id={navLinks[2].id}>
+    <section
+      id={navLinks[1].id}
+      className="relative max-w-[1900px] mx-6 sm:mx-12 lg:mx-20 overflow-hidden"
+    >
       <motion.h1
-        className="mt-10 lg:mt-20 ml-6 sm:ml-14 lg:ml-0 p-5 text-[2.5em] sm:text-[4rem] lg:text-[7rem] xl:text-[9.5rem] 
+        className="mt-10 lg:mt-20 ml-6 sm:ml-14 lg:ml-0 p-0 xs:p-5 text-[2.5em] sm:text-[4rem] lg:text-[7rem] xl:text-[9.5rem] 
         leading-10 sm:leading-[4rem] lg:leading-[6rem] xl:leading-[8rem] font-HN_Bold tracking-tighter"
         initial={{ opacity: 0, y: -75 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -27,14 +30,14 @@ const WhatWeDo = () => {
           {whereWeAreContent1.map((text, index) => (
             <h5
               key={index}
-              className="mx-3 sm:mx-12 lg:mx-0 text-xl sm:text-3xl xl:text-5xl xxl:text-6xl font-HN_Bold tracking-tight hover:scale-105 transition-all hover:text-charcoal"
+              className="xs:mx-3 sm:mx-12 lg:mx-0 text-lg xs:text-xl sm:text-3xl xl:text-5xl xxl:text-6xl font-HN_Bold tracking-tight hover:scale-105 transition-all hover:text-charcoal"
             >
               {text.content}
               <br />
             </h5>
           ))}
         </div>
-        <div className="flex flex-1 flex-col mx-3 sm:mx-12 lg:mx-0 justify-center max-w-[330px] sm:max-w-[420px] lg:max-w-[100%] mt-5 sm:mt-10 lg:mt-0">
+        <div className="flex flex-1 flex-col xs:mx-3 sm:mx-12 lg:mx-0 justify-center max-w-[330px] sm:max-w-[420px] lg:max-w-[100%] mt-5 sm:mt-10 lg:mt-0">
           {whereWeAreContent2.map((text, index) => (
             <p
               key={index}
@@ -48,10 +51,8 @@ const WhatWeDo = () => {
         </div>
       </div>
       <Services />
+      <Policy />
     </section>
   );
 };
-
-("flex flex-1 text-2xl pl-10 font-HN_Regular");
-
 export default WhatWeDo;

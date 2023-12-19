@@ -28,7 +28,12 @@ const LogoFooter = () => {
         </h5>
         <div className="flex flex-row">
           {socialMedia.map((i, index) => (
-            <a key={index} href={i.url}>
+            <a
+              key={index}
+              href={i.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={i.src}
                 alt={i.alt}

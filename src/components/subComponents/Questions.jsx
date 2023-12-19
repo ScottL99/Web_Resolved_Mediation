@@ -13,7 +13,7 @@ const Questions = () => {
   const switchContent = (num) => setContentNum(num);
 
   return (
-    <section className="flex flex-col my-10 p-5 z-0 overflow-hidden mx-6 sm:mx-12 lg:mx-20 relative">
+    <section className="flex flex-col my-10 p-5 z-0 overflow-hidden relative">
       <button
         className={`${
           toggle ? "translate-y-0" : "-translate-y-full"

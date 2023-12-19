@@ -13,41 +13,25 @@ export const logoName = "Resolved Mediation";
 // NavBar (menu), change the "title" only
 export const navLinks = [
   {
-    id: "firstSection",
+    id: "0",
     title: "Who we are.",
     url: "WhoWeAre",
   },
   {
-    id: "sap1",
-    title: "|",
-    url: "",
-  },
-  {
-    id: "secondSection",
+    id: "1",
     title: "What we do.",
     url: "WhatWeDo",
   },
-  {
-    id: "sap2",
-    title: "|",
-    url: "",
-  },
 ];
 
-export const navMap = [
-  {
-    id: "MapSection",
-    title: "Where we are.",
-    url: "",
-  },
-];
+export const navMap = "Where we are.";
 
 // Text on the hero (home) page
 export const heroTitle = "Resolved";
 
 export const heroContent = "Ensuring you get the most out of life.";
 
-export const button = " Book an appointment";
+export const appointment = " Book an appointment";
 
 // Text on the "Who we are."
 export const introPortrait = [
@@ -208,14 +192,11 @@ export const serviceContent = [
 
 // Style on the service icons （don't change it unless you want to modify the style)
 export const servicesStyle = {
-  dashedLineH:
-    "w-[8rem] sm:w-[14rem] xl:w-[20rem] xxl:w-[26rem] border-t-4  border-stone-300 border-dashed col-span-3",
-  dashedLineV: "h-[200px] my-10 border-r-4 border-stone-300 border-dashed",
   iconDiv: "flex flex-col justify-center items-center col-span-3 group",
-  icon: "flex w-[2.5rem] h-[2.5rem] sm:w-[3.5rem] sm:h-[3.5rem] mx-4 drop-shadow-2xl object-contain group-hover:scale-105 transition-all duration-500 cursor-pointer",
-  text: " bg-charcoal text-white text-center sm:text-left text-[10px] sm:text-sm xl:text-xl xxl:text-2xl lg:leading-3 xl:leading-5 font-HN_Bold px-2 py-[1px] sm:px-3 sm:py-1 rounded-xl group-hover:scale-105 transition-all duration-500 cursor-pointer",
+  icon: "flex w-[3.5rem] h-[3.5rem] mx-4 drop-shadow-2xl object-contain group-hover:scale-105 transition-all duration-500 cursor-pointer",
+  text: "bg-charcoal text-white text-center whitespace-nowrap tracking-tight sm:text-left text-base xl:text-xl xxl:text-2xl lg:leading-none font-HN_Bold px-3 xl:px-4 py-[0.5px] py-[1px] lg:py-[4px] xl:py-[2px] rounded-2xl group-hover:scale-105 transition-all duration-500 cursor-pointer",
   text_fee:
-    "text-orange text-center sm:text-left text-sm xl:text-xl xxl:text-2xl lg:leading-3 xl:leading-5 font-HN_Bold mt-1 group-hover:scale-105 transition-all duration-500 cursor-pointer",
+    "text-orange text-center sm:text-left text-sm xl:text-lg xxl:text-xl lg:leading-3 font-HN_Bold mt-1 group-hover:scale-105 transition-all duration-500 cursor-pointer",
 };
 
 // Text on the Footer
@@ -245,18 +226,21 @@ export const contactInfo = [
 export const socialMedia = [
   {
     src: linkedin_icon,
+    srcMobile: Linkedin_icon_gray,
     alt: "linkedin_icon",
-    url: "#",
+    url: "https://www.linkedin.com/in/dr-elena-rudnik-a46b2a1a1/",
   },
   {
     src: instagram_icon,
+    srcMobile: Instagram_icon_gray,
     alt: "instagram_icon",
-    url: "#",
+    url: "https://www.facebook.com/Facilitative.Mediation/",
   },
   {
     src: facebook_icon,
+    srcMobile: Facebook_icon_gray,
     alt: "facebook_icon",
-    url: "#",
+    url: "https://www.facebook.com/Facilitative.Mediation/",
   },
 ];
 
@@ -278,3 +262,6 @@ export const socialMediaMobile = [
     url: "#",
   },
 ];
+
+//
+export const policy = "COMPLAINT MANAGEMENT & ETHICS POLICY";

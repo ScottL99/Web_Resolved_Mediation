@@ -21,6 +21,9 @@ import hero_video_mobile from "./hero_video_mobile.mp4";
 import Facebook_icon_gray from "./Facebook_icon_gray.png";
 import Instagram_icon_gray from "./Instagram_icon_gray.png";
 import Linkedin_icon_gray from "./Linkedin_icon_gray.png";
+import code_of_ethics from "./code_of_ethics.pdf";
+import dashLine_horizontal from "./dashLine_horizontal.png";
+import dashLine_vertical from "./dashLine_vertical.png";
 
 export {
   rm_logo_header,
@@ -46,4 +49,7 @@ export {
   Facebook_icon_gray,
   Instagram_icon_gray,
   Linkedin_icon_gray,
+  code_of_ethics,
+  dashLine_horizontal,
+  dashLine_vertical,
 };
