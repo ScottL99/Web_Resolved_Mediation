@@ -35,7 +35,7 @@ const ServicesForMobile = () => {
   const serviceItems = (item, setItem, num, icon) => {
     return (
       <motion.button
-        className={`${servicesStyle.iconDiv} my-6 relative`}
+        className={`${servicesStyle.iconDiv} my-2 relative h-[15rem]`}
         initial={{ opacity: 0, y: 100, x: -50, rotate: "-5deg" }}
         whileInView={{ opacity: 1, y: 0, x: 0, rotate: "0deg" }}
         transition={{ duration: 0.5, delay: 0.25 }}
@@ -52,16 +52,18 @@ const ServicesForMobile = () => {
         {serviceContent[num].content3 && (
           <p className={servicesStyle.text}>{serviceContent[num].content3}</p>
         )}
-        <p className={servicesStyle.text_fee}>{serviceContent[num].time}</p>
-        <p className={servicesStyle.text_fee}>{serviceContent[num].price}</p>
 
         {serviceContent[num].hiddenContent && (
           <div
             className={`${
               item ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-            } absolute flex h-full w-[90%] z-30 top-0 items-center justify-center p-3 text-sm bg-charcoal/90 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
+            } absolute flex flex-col h-full w-[90%] z-30 top-0 items-center justify-center p-4 text-sm bg-charcoal/95 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
           >
-            <p>{serviceContent[num].hiddenContent}</p>
+            <p className="mb-2">{serviceContent[num].hiddenContent}</p>
+            <p className={servicesStyle.text_fee}>
+              {serviceContent[num].price} / {serviceContent[num].time}
+            </p>
+            <p className={servicesStyle.text_fee}></p>
           </div>
         )}
       </motion.button>
@@ -72,7 +74,7 @@ const ServicesForMobile = () => {
     <div className="flex sm:hidden flex-col">
       {/* the first item with two icons */}
       <motion.button
-        className={`${servicesStyle.iconDiv} my-6 relative`}
+        className={`${servicesStyle.iconDiv} my-2 relative h-[16rem]`}
         initial={{ opacity: 0, y: 100, x: -50, rotate: "-5deg" }}
         whileInView={{ opacity: 1, y: 0, x: 0, rotate: "0deg" }}
         transition={{ duration: 0.5, delay: 0.25 }}
@@ -96,17 +98,16 @@ const ServicesForMobile = () => {
         </div>
         <p className={servicesStyle.text}>{serviceContent[0].content1}</p>
         <p className={servicesStyle.text}>{serviceContent[0].content2}</p>
-        <p className={servicesStyle.text_fee}>{serviceContent[0].time}</p>
-        <p className={servicesStyle.text_fee}>{serviceContent[0].price}</p>
         {
           <div
             className={`${
               toggleMobile0
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-full opacity-0"
-            } absolute flex flex-1 h-full w-[90%] z-30 top-0 items-center justify-center p-3 text:sm bg-charcoal/90 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
+            } absolute flex flex-col h-full w-[90%] z-30 top-0 items-center justify-center p-4 text-sm bg-charcoal/95 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
           >
-            {serviceContent[0].hiddenContent}
+            <p className="mb-2">{serviceContent[0].hiddenContent}</p>
+            <p className={servicesStyle.text_fee}>{serviceContent[0].price}</p>
           </div>
         }
       </motion.button>

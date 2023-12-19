@@ -20,8 +20,6 @@ const Services = () => {
   const [contentNum, setContentNum] = useState(0);
   const switchContent = (num) => setContentNum(num);
 
-  const dashedLineH = "px-6 col-span-3";
-
   const HorizontalDashedLineForLarge = () => (
     <div className="lg:flex hidden px-6 col-span-3">
       <img
@@ -85,8 +83,6 @@ const Services = () => {
         {serviceContent[num].content3 && (
           <p className={servicesStyle.text}>{serviceContent[num].content3}</p>
         )}
-        <p className={servicesStyle.text_fee}>{serviceContent[num].time}</p>
-        <p className={servicesStyle.text_fee}>{serviceContent[num].price}</p>
       </motion.button>
     );
   };
@@ -129,8 +125,6 @@ const Services = () => {
           </div>
           <p className={servicesStyle.text}>{serviceContent[0].content1}</p>
           <p className={servicesStyle.text}>{serviceContent[0].content2}</p>
-          <p className={servicesStyle.text_fee}>{serviceContent[0].time}</p>
-          <p className={servicesStyle.text_fee}>{serviceContent[0].price}</p>
         </motion.button>
         {VerticalDashedLine()}
         {serviceItems(1, servicesIcon3, 0.5)}
@@ -169,8 +163,6 @@ const Services = () => {
           <div className="h-3"></div>
           <p className={servicesStyle.text}>{serviceContent[5].content1}</p>
           <p className={servicesStyle.text}>{serviceContent[5].content2}</p>
-          <p className={servicesStyle.text_fee}>{serviceContent[5].time}</p>
-          <p className={servicesStyle.text_fee}>{serviceContent[5].price}</p>
         </motion.div>
       </div>
       <img
@@ -181,11 +173,21 @@ const Services = () => {
       <div
         className={`${
           toggle ? "translate-y-0" : "-translate-y-full"
-        } absolute hidden sm:flex flex-1 h-full w-full z-10 top-0 items-center justify-center px-5 sm:px-20 
-        text:lg sm:text-xl lg:text-2xl rounded-3xl bg-charcoal/90 text-white text-left font-HN_Regular transition-all duration-700`}
+        } absolute hidden sm:flex flex-col h-full w-full z-10 top-0 items-center justify-around px-5 sm:px-20 
+        rounded-3xl bg-charcoal/90 font-HN_Regular transition-all duration-700`}
         onClick={() => setToggle((prog) => !prog)}
       >
-        {serviceContent[contentNum].hiddenContent}
+        <p className="mb-4 sm:text-xl lg:text-2xl text-white text-left ">
+          {serviceContent[contentNum].hiddenContent}
+        </p>
+        <div className="flex flex-col">
+          <p className={servicesStyle.text_fee}>
+            {serviceContent[contentNum].time}
+          </p>
+          <p className={servicesStyle.text_fee}>
+            {serviceContent[contentNum].price}
+          </p>
+        </div>
       </div>
     </section>
   );

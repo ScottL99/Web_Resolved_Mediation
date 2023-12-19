@@ -196,7 +196,7 @@ export const servicesStyle = {
   icon: "flex w-[3.5rem] h-[3.5rem] mx-4 drop-shadow-2xl object-contain group-hover:scale-105 transition-all duration-500 cursor-pointer",
   text: "bg-charcoal text-white text-center whitespace-nowrap tracking-tight sm:text-left text-base xl:text-xl xxl:text-2xl lg:leading-none font-HN_Bold px-3 xl:px-4 py-[0.5px] py-[1px] lg:py-[4px] xl:py-[2px] rounded-2xl group-hover:scale-105 transition-all duration-500 cursor-pointer",
   text_fee:
-    "text-orange text-center sm:text-left text-sm xl:text-lg xxl:text-xl lg:leading-3 font-HN_Bold mt-1 group-hover:scale-105 transition-all duration-500 cursor-pointer",
+    "text-white text-center  text-base lg:text-lg xl:text-xl xxl:text-2xl font-HN_Bold",
 };
 
 // Text on the Footer
