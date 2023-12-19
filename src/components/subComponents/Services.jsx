@@ -173,11 +173,11 @@ const Services = () => {
       <div
         className={`${
           toggle ? "translate-y-0" : "-translate-y-full"
-        } absolute hidden sm:flex flex-col h-full w-full z-10 top-0 items-center justify-around px-5 sm:px-20 
+        } absolute hidden sm:flex flex-col h-full w-full z-10 top-0 right-0 items-center justify-center 
         rounded-3xl bg-charcoal/90 font-HN_Regular transition-all duration-700`}
         onClick={() => setToggle((prog) => !prog)}
       >
-        <p className="mb-4 sm:text-xl lg:text-2xl text-white text-left ">
+        <p className="mb-4 sm:text-xl lg:text-2xl text-white text-left sm:m-10 ">
           {serviceContent[contentNum].hiddenContent}
         </p>
         <div className="flex flex-col">
