@@ -148,22 +148,7 @@ const Services = () => {
         {HorizontalDashedLineForSmall()}
         {serviceItems(4, servicesIcon5, 0.5)}
         {VerticalDashedLine()}
-        <motion.div
-          className={servicesStyle.iconDiv}
-          initial={{ opacity: 0, y: 100, x: -50, rotate: "-5deg" }}
-          whileInView={{ opacity: 1, y: 0, x: 0, rotate: "0deg" }}
-          transition={{ duration: 0.5, delay: 0.75 }}
-          viewport={{ once: true }}
-        >
-          <img
-            src={servicesIcon6}
-            alt="icon6"
-            className={servicesStyle.icon}
-          ></img>
-          <div className="h-3"></div>
-          <p className={servicesStyle.text}>{serviceContent[5].content1}</p>
-          <p className={servicesStyle.text}>{serviceContent[5].content2}</p>
-        </motion.div>
+        {serviceItems(5, servicesIcon6, 0.75)}
       </div>
       <img
         src={dashLine_horizontal}

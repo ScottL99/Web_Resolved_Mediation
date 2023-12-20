@@ -53,19 +53,17 @@ const ServicesForMobile = () => {
           <p className={servicesStyle.text}>{serviceContent[num].content3}</p>
         )}
 
-        {serviceContent[num].hiddenContent && (
-          <div
-            className={`${
-              item ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-            } absolute flex flex-col h-full w-[90%] z-30 top-0 items-center justify-center p-4 text-sm bg-charcoal/95 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
-          >
-            <p className="mb-2">{serviceContent[num].hiddenContent}</p>
-            <p className={servicesStyle.text_fee}>
-              {serviceContent[num].price} / {serviceContent[num].time}
-            </p>
-            <p className={servicesStyle.text_fee}></p>
-          </div>
-        )}
+        <div
+          className={`${
+            item ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
+          } absolute flex flex-col h-full w-[90%] z-30 top-0 items-center justify-center p-4 text-sm bg-charcoal/95 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
+        >
+          <p className="mb-2">{serviceContent[num].hiddenContent}</p>
+          <p className={servicesStyle.text_fee}>
+            {serviceContent[num].price} / {serviceContent[num].time}
+          </p>
+          <p className={servicesStyle.text_fee}></p>
+        </div>
       </motion.button>
     );
   };
