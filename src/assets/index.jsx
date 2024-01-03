@@ -1,5 +1,3 @@
-import rm_logo_header from "./rm_logo_header.png";
-import rm_logo_footer from "./rm_logo_footer.png";
 import heroImg from "./hero.jpg";
 import squarePortrait from "./portrait_Elana_Rudnick_square.png";
 import arrow_icon from "./arrow_icon.png";
@@ -24,10 +22,14 @@ import Linkedin_icon_gray from "./Linkedin_icon_gray.png";
 import code_of_ethics from "./code_of_ethics.pdf";
 import dashLine_horizontal from "./dashLine_horizontal.png";
 import dashLine_vertical from "./dashLine_vertical.png";
+import logo from "./resolved_mediation_logo.png";
+import logo_words from "./resolved_mediation_logo_words.png";
+import logo_words_white from "./resolved_mediation_logo_words_white.png";
 
 export {
-  rm_logo_header,
-  rm_logo_footer,
+  logo,
+  logo_words,
+  logo_words_white,
   heroImg,
   squarePortrait,
   arrow_icon,
