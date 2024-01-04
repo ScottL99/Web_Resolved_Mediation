@@ -13,11 +13,11 @@ const Questions = () => {
   const switchContent = (num) => setContentNum(num);
 
   return (
-    <section className="flex flex-col my-10 p-5 z-0 overflow-hidden relative">
+    <section className="flex flex-col my-10 px-5 z-0 overflow-hidden relative">
       <button
         className={`${
-          toggle ? "translate-y-0" : "-translate-y-full"
-        } absolute flex flex-1 lg:hidden bg-charcoal text-white font-HN_Regular text-xs xs:text-sm sm:text-xl  h-full z-10 top-0 transition-all duration-500 px-5 sm:px-10 text-left items-center`}
+          toggle ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        } absolute flex flex-1 lg:hidden bg-charcoal text-white font-HN_Regular text-xs xs:text-sm sm:text-xl  h-full z-10 top-0 left-0 transition-all duration-500 mx-5 px-5 sm:px-10 text-left items-center`}
         onClick={() => setToggle((prog) => !prog)}
       >
         <p>

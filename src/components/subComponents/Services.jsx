@@ -153,7 +153,7 @@ const Services = () => {
       <img
         src={dashLine_horizontal}
         alt="dashLine_horizontal"
-        className="h-1 object-cover sm:px-2 lg:px-4"
+        className="h-1 object-cover px-6 sm:px-2 lg:px-4"
       />
       <div
         className={`${

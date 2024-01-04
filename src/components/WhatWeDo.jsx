@@ -30,7 +30,7 @@ const WhatWeDo = () => {
           {whereWeAreContent1.map((text, index) => (
             <h5
               key={index}
-              className="xs:mx-3 sm:mx-12 lg:mx-0 text-lg xs:text-xl sm:text-3xl xl:text-5xl xxl:text-6xl font-HN_Bold tracking-tight hover:scale-105 transition-all hover:text-charcoal"
+              className="whitespace-nowrap xs:mx-3 sm:mx-12 lg:mx-0 leading-tight lg:leading-normal text-xl sm:text-3xl xl:text-5xl xxl:text-6xl font-HN_Bold tracking-tight hover:scale-105 transition-all hover:text-charcoal"
             >
               {text.content}
               <br />

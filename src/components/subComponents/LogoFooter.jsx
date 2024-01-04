@@ -16,12 +16,12 @@ const LogoFooter = () => {
         <img
           alt="logo_resolved_mediation"
           src={logo_words_white}
-          className="ml-2 sm:ml-4 h-4 sm:h-5 lg:h-7 "
+          className="ml-2 sm:ml-4 h-4 sm:h-5  "
         ></img>
         <img
           alt="logo"
           src={logo}
-          className="ml-[6px] sm:ml-[9px] lg:ml-3 h-6 sm:h-7 lg:h-10 group-hover:scale-110 group-hover:translate-x-1 transition-all duration-500 "
+          className="ml-[6px] sm:ml-[9px] lg:ml-2 h-6 sm:h-7 group-hover:scale-110 group-hover:translate-x-1 transition-all duration-500 "
         ></img>
       </Link>
       <div className="flex flex-col justify-end px-4 mb-1 sm:mb-0">

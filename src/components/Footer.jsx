@@ -11,7 +11,7 @@ const Footer = () => {
     >
       <LogoFooter />
       <div className="flex flex-col pl-4 lg:pl-[3.75rem] pr-4">
-        <h5 className="mb-2 text-2xl font-HN_Bold text-lightOrange">
+        <h5 className=" mt-4 sm:mt-0 mb-1 sm:mb-2 text-2xl font-HN_Bold text-lightOrange">
           {findUs}
         </h5>
         {address.map((add, index) => (
@@ -28,7 +28,7 @@ const Footer = () => {
         ))}
       </div>
       {/* orange bar on the bottom */}
-      <div className="absolute w-full h-6 bottom-0 left-[3rem] sm:left-[5rem]  lg:left-[11.75rem] bg-orange"></div>
+      <div className="absolute w-full h-3 lg:h-6 bottom-0 left-[3rem] sm:left-[5rem]  lg:left-[11.75rem] bg-orange"></div>
     </div>
   );
 };
