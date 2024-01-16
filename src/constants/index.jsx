@@ -33,6 +33,10 @@ export const heroContent = "Ensuring you get the most out of life.";
 
 export const appointment = " Book an appointment";
 
+// Booking Url
+export const bookingURL =
+  "https://my.powerdiary.com/clientportal/resolve_mediate";
+
 // Text on the "Who we are."
 export const introPortrait = [
   "Dr Elena Rudnik, PhD, is a distinguished Family Dispute Resolution Practitioner and Mediator with over two decades of experience. Her impressive academic credentials include a PhD & BA in psychology, a Master's in Grief and Palliative Counselling, and a Graduate Diploma in Family Dispute Resolution. Currently pursuing a Master of Social Work, Elena is a member of prestigious professional associations, including the Australian Association of Social Workers (AASW), Mediation Institute (MI), and the International Academy of Collaborative Professionals (IACP).  Beyond private practice, Dr. Rudnik has significantly contributed to the Federal and State Government, University, and not-for-profit sectors, showcasing a holistic and collaborative approach dedicated to facilitating positive transformations in the lives of those she serves.",

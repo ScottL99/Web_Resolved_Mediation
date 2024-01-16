@@ -7,7 +7,9 @@ const WhereWeAre = (props) => {
     <section
       onClick={() => props.callback(false)}
       className={` ${
-        props.mapSwitch ? "translate-x-0" : "translate-x-[100vw]"
+        props.mapSwitch
+          ? "translate-x-0 opacity-100"
+          : "translate-x-[100vw] opacity-0"
       } absolute z-50 flex flex-col items-center min-h-[43vh] top-12 sm:top-24 right-0 p-4 sm:p-8 lg:p-12 overflow-hidden bg-gradient-to-b from-white/80 to-white rounded-3xl transition-all duration-1000 cursor-pointer`}
     >
       <img
