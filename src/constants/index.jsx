@@ -39,7 +39,8 @@ export const bookingURL =
 
 // Text on the "Who we are."
 export const introPortrait = [
-  "Dr Elena Rudnik, PhD, is a distinguished Family Dispute Resolution Practitioner and Mediator with over two decades of experience. Her impressive academic credentials include a PhD & BA in psychology, a Master's in Grief and Palliative Counselling, and a Graduate Diploma in Family Dispute Resolution. Currently pursuing a Master of Social Work, Elena is a member of prestigious professional associations, including the Australian Association of Social Workers (AASW), Mediation Institute (MI), and the International Academy of Collaborative Professionals (IACP).  Beyond private practice, Dr. Rudnik has significantly contributed to the Federal and State Government, University, and not-for-profit sectors, showcasing a holistic and collaborative approach dedicated to facilitating positive transformations in the lives of those she serves.",
+  "Dr Elena Rudnik",
+  ", PhD, is a distinguished Family Dispute Resolution Practitioner and Mediator with over two decades of experience. Her impressive academic credentials include a PhD & BA in psychology, a Master's in Grief and Palliative Counselling, and a Graduate Diploma in Family Dispute Resolution. Currently pursuing a Master of Social Work, Elena is a member of prestigious professional associations, including the Australian Association of Social Workers (AASW), Mediation Institute (MI), and the International Academy of Collaborative Professionals (IACP).  Beyond private practice, Dr. Rudnik has significantly contributed to the Federal and State Government, University, and not-for-profit sectors, showcasing a holistic and collaborative approach dedicated to facilitating positive transformations in the lives of those she serves.",
 ];
 
 export const introContent = [
@@ -107,6 +108,9 @@ export const questionCards = [
 ];
 
 // // Text on the "Where we are."
+export const mapLink =
+  "https://www.google.com/maps/place/Beckwith+Business+Park/@-34.481238,138.9909269,19z/data=!3m1!4b1!4m6!3m5!1s0x6ab9ebcedd1090a7:0xd6cfecd24dc2ac37!8m2!3d-34.481238!4d138.9915706!16s%2Fg%2F12hs5r5wx?entry=ttu";
+
 export const whereWeAreTitle = ["A Collaborative", "A", "pproach."];
 
 export const whereWeAreContent1 = [
@@ -221,10 +225,16 @@ export const contactInfo = [
     info: "08 8151 1339",
   },
   {
+    title: "Mobile: ",
+    info: "0401 165 120",
+  },
+  {
     title: "Email: ",
     info: "resolve_mediate@icloud.com",
   },
 ];
+
+export const bookingLink = "Book an appointment now";
 
 // Link of Social media
 export const socialMedia = [

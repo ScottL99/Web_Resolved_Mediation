@@ -19,10 +19,18 @@ const Intro = () => {
               alt="portrait"
               className="lg:absolute flex object-contain"
             ></img>
-            <div className="absolute hidden lg:flex inset-0 bg-charcoal [transform:rotateY(180deg)] [backface-visibility:hidden]">
-              <p className="flex items-center justify-center text-white text-xs  xl:text-base xxl:text-xl font-HN_Regular p-5">
+            <div className="absolute hidden lg:flex lg:flex-col inset-0 bg-charcoal [transform:rotateY(180deg)] [backface-visibility:hidden]">
+              <p className="hidden xl:flex items-center text-white  xl:text-xl xxl:text-2xl font-HN_Bold px-5 mt-5">
                 {introPortrait[0]}
               </p>
+              <div className="flex flex-1 flex-col items-center justify-center">
+                <p className="inline  text-white text-xs  xl:text-base xxl:text-xl font-HN_Regular px-5 py-2">
+                  <span className=" lg:font-HN_Bold xl:font-HN_Regular">
+                    {introPortrait[0]}
+                  </span>
+                  {introPortrait[1]}
+                </p>
+              </div>
             </div>
             <img
               src={arrow_icon}
@@ -31,20 +39,28 @@ const Intro = () => {
             ></img>
           </div>
         </div>
-        <div className="flex flex-col flex-1 mt-6 sm:mt-0 justify-center ">
+        <div className="flex flex-col flex-1 mt-6 sm:mt-0 justify-center">
           {introContent.map((text, index) => (
             <p
               key={index}
-              className="whitespace-nowrap leading-tight lg:leading-normal text-xl sm:text-2xl lg:text-3xl xl:text-5xl xxl:text-7xl ml-1 sm:ml-8 lg:ml-16 xl:ml-24 font-HN_Bold tracking-tight hover:scale-105 transition-all hover:text-charcoal"
+              className="whitespace-nowrap leading-tight text-xl sm:text-2xl lg:text-3xl xl:text-5xl xxl:text-7xl ml-1 sm:ml-8 lg:ml-16 xl:ml-24 font-HN_Bold tracking-tight hover:scale-105 transition-all hover:text-charcoal"
             >
               {text.content}
               <br />
             </p>
           ))}
         </div>
-        <div className="absolute flex lg:hidden flex-1 h-full  top-0 right-0 opacity-0 group-hover/mobile:opacity-100 bg-charcoal transition-all duration-500 ">
-          <p className="flex flex-1 p-4 text-white text-sm font-HN_Regular ">
+        <div
+          className="absolute flex flex-col flex-1 lg:hidden h-full top-0 right-0 opacity-0
+         border-l-2
+        group-hover/mobile:opacity-100 bg-charcoal transition-all duration-500 "
+        >
+          <p className="p-4 text-white text-base font-HN_Bold ">
             {introPortrait[0]}
+          </p>
+          <p className="flex flex-1 px-4 text-white text-sm font-HN_Regular ">
+            {introPortrait[0]}
+            {introPortrait[1]}
           </p>
         </div>
       </div>

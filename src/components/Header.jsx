@@ -19,7 +19,7 @@ const Header = () => {
   const [mapToggle, setMapToggle] = useState(false);
 
   return (
-    <header className="relative z-0 max-w-[1900px] mx-0 sm:mx-12 lg:mx-20 overflow-hidden">
+    <header className="relative flex flex-col z-0 max-w-[1900px] mx-0 sm:mx-12 lg:mx-20 overflow-hidden">
       {/* The part with the orange background */}
       <section
         id="header"

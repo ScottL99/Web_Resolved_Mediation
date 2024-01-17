@@ -165,14 +165,6 @@ const Services = () => {
         <p className="mb-4 sm:text-xl lg:text-2xl text-white text-left sm:m-10 ">
           {serviceContent[contentNum].hiddenContent}
         </p>
-        <div className="flex flex-col">
-          <p className={servicesStyle.text_fee}>
-            {serviceContent[contentNum].time}
-          </p>
-          <p className={servicesStyle.text_fee}>
-            {serviceContent[contentNum].price}
-          </p>
-        </div>
       </div>
     </section>
   );

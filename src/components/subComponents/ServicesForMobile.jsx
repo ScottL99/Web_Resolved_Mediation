@@ -59,9 +59,6 @@ const ServicesForMobile = () => {
           } absolute flex flex-col h-full w-[90%] z-30 top-0 items-center justify-center p-4 text-sm bg-charcoal/95 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
         >
           <p className="mb-2">{serviceContent[num].hiddenContent}</p>
-          <p className={servicesStyle.text_fee}>
-            {serviceContent[num].price} / {serviceContent[num].time}
-          </p>
           <p className={servicesStyle.text_fee}></p>
         </div>
       </motion.button>
@@ -105,7 +102,6 @@ const ServicesForMobile = () => {
             } absolute flex flex-col h-full w-[90%] z-30 top-0 items-center justify-center p-4 text-sm bg-charcoal/95 text-white text-left rounded-2xl font-HN_Regular transition-all duration-700`}
           >
             <p className="mb-2">{serviceContent[0].hiddenContent}</p>
-            <p className={servicesStyle.text_fee}>{serviceContent[0].price}</p>
           </div>
         }
       </motion.button>
@@ -118,7 +114,26 @@ const ServicesForMobile = () => {
       {dashLineImg()}
       {serviceItems(toggleMobile4, setToggleMobile4, 4, servicesIcon5)}
       {dashLineImg()}
-      {serviceItems(toggleMobile5, setToggleMobile5, 5, servicesIcon6)}
+      <motion.button
+        className={`${servicesStyle.iconDiv} my-2 relative h-[15rem]`}
+        initial={{ opacity: 0, y: 100, x: -50, rotate: "-5deg" }}
+        whileInView={{ opacity: 1, y: 0, x: 0, rotate: "0deg" }}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        viewport={{ once: true }}
+      >
+        <div className="flex flex-row mb-3">
+          <img
+            src={servicesIcon6}
+            alt="icon"
+            className={servicesStyle.icon}
+          ></img>
+        </div>
+        <p className={servicesStyle.text}>{serviceContent[5].content1}</p>
+        <p className={servicesStyle.text}>{serviceContent[5].content2}</p>
+        {serviceContent[5].content3 && (
+          <p className={servicesStyle.text}>{serviceContent[5].content3}</p>
+        )}
+      </motion.button>
     </div>
   );
 };
