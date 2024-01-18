@@ -19,7 +19,12 @@ const Header = () => {
   const [mapToggle, setMapToggle] = useState(false);
 
   return (
-    <header className="relative flex flex-col z-0 max-w-[1900px] mx-0 sm:mx-12 lg:mx-20 overflow-hidden">
+    <motion.header
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.25 }}
+      className="relative flex flex-col z-0 mx-0 sm:mx-12 lg:mx-20 overflow-hidden"
+    >
       {/* The part with the orange background */}
       <section
         id="header"
@@ -67,26 +72,12 @@ const Header = () => {
       {/* hero video animation */}
       <HeroAnimate />
       {/* Appointment part for large viewport */}
-      <motion.section
-        initial={{
-          opacity: 0,
-          y: 100,
-        }}
-        animate={{
-          opacity: 100,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.7,
-          delay: 0.5,
-        }}
-        className="hidden lg:flex flex-row justify-between p-10 items-center"
-      >
+      <section className="hidden lg:flex flex-row justify-between p-10 items-center">
         <p className="text-base lg:text-2xl xl:text-3xl font-HN_Medium">
           {heroContent}
         </p>
         <Appointment />
-      </motion.section>
+      </section>
       {/* Appointment and navbar part for mobile devices viewport */}
       <section className="flex lg:hidden flex-col mx-3 sm:mx-0">
         <nav className="flex flex-col py-2 my-3 text-2xl font-HN_Bold sm:text-4xl transition-all">
@@ -146,7 +137,7 @@ const Header = () => {
       </section>
       <WhereWeAre mapSwitch={mapToggle} callback={(x) => setMapToggle(x)} />
       <Intro />
-    </header>
+    </motion.header>
   );
 };
 

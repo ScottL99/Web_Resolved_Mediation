@@ -11,7 +11,7 @@ const WhatWeDo = () => {
   return (
     <section
       id={navLinks[1].id}
-      className="relative max-w-[1900px] mx-6 sm:mx-12 lg:mx-20 overflow-hidden"
+      className="relative mx-6 sm:mx-12 lg:mx-20 overflow-hidden"
     >
       <motion.h1
         className="mt-10 lg:mt-20 ml-6 sm:ml-14 lg:ml-0 p-0 xs:p-5 text-[2.5em] sm:text-[4rem] lg:text-[7rem] xl:text-[9.5rem] 

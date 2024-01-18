@@ -1,10 +1,9 @@
 import { heroTitle } from "../../constants";
 import { colonPng } from "../../assets";
-import { motion } from "framer-motion";
 
 const Title = () => {
   return (
-    <motion.div
+    <div
       className="flex flex-row items-end lg:mt-5 "
       initial={{
         opacity: 0,
@@ -30,7 +29,7 @@ const Title = () => {
         className="h-[2.25rem] sm:h-[4.25rem] lg:h-[5rem] xl:h-[7rem] 
             mb-4 sm:mb-6 lg:mb-[26px] xl:mb-8 ml-1 sm:ml-2 lg:ml-4"
       ></img>
-    </motion.div>
+    </div>
   );
 };
 

@@ -7,7 +7,6 @@ import WhereWeAre from "./WhereWeAre";
 import Questions from "./Questions";
 import ServicesForMobile from "./ServicesForMobile";
 import Services from "./Services";
-
 import Policy from "./policy";
 import LogoFooter from "./LogoFooter";
 
