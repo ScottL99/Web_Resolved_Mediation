@@ -7,6 +7,7 @@ const LogoFooter = () => {
     <div className="flex flex-col  sm:flex-row justify-between">
       <Link
         to="header"
+        href="header"
         smooth={true}
         offset={0}
         duration={1500}

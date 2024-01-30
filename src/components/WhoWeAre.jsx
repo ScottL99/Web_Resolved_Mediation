@@ -26,19 +26,19 @@ const WhoWeAre = () => {
         viewport={{ once: true }}
       >
         {whatWeDoContents.map((text, index) => (
-          <motion.li
+          <motion.div
             key={index}
             className="flex flex-col list-none p-5 hover:scale-105 transition-all "
           >
             <div className="flex h-[1px] bg-black "></div>
-            <h5 className="flex mb-2 mt-6 lg:text-lg xl:text-xl font-HN_Medium">
+            <h3 className="flex mb-2 mt-6 lg:text-lg xl:text-xl font-HN_Medium">
               {text.title}
-            </h5>
+            </h3>
             <p className="flex flex-1 lg:mb-6 font-HN_Regular lg:text-sm xl:text-lg ">
               {text.content}
             </p>
             <div className="hidden lg:flex h-[1px] bg-black "></div>
-          </motion.li>
+          </motion.div>
         ))}
         <div className="lg:hidden h-[1px] bg-black mx-5 mt-3" />
       </motion.div>

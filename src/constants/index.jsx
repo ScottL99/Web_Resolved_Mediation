@@ -242,19 +242,19 @@ export const socialMedia = [
     src: linkedin_icon,
     srcMobile: Linkedin_icon_gray,
     alt: "linkedin_icon",
-    url: "https://www.linkedin.com/in/dr-elena-rudnik-a46b2a1a1/",
+    url: "https://www.linkedin.com/in/dr-elena-rudnik-resolved-mediation",
   },
   {
     src: instagram_icon,
     srcMobile: Instagram_icon_gray,
     alt: "instagram_icon",
-    url: "https://www.facebook.com/Facilitative.Mediation/",
+    url: "https://www.instagram.com/resolve_mediate/",
   },
   {
     src: facebook_icon,
     srcMobile: Facebook_icon_gray,
     alt: "facebook_icon",
-    url: "https://www.facebook.com/Facilitative.Mediation/",
+    url: "https://www.facebook.com/ResolveMediate",
   },
 ];
 
@@ -263,17 +263,17 @@ export const socialMediaMobile = [
   {
     src: Linkedin_icon_gray,
     alt: "linkedin_icon",
-    url: "#",
+    url: "https://www.linkedin.com/in/dr-elena-rudnik-resolved-mediation",
   },
   {
     src: Instagram_icon_gray,
     alt: "instagram_icon",
-    url: "#",
+    url: "https://www.instagram.com/resolve_mediate/",
   },
   {
     src: Facebook_icon_gray,
     alt: "facebook_icon",
-    url: "#",
+    url: "https://www.facebook.com/ResolveMediate",
   },
 ];
 

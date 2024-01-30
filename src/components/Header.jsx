@@ -44,6 +44,7 @@ const Header = () => {
                 >
                   <Link
                     to={nav.id}
+                    href={nav.id}
                     smooth={true}
                     offset={-20}
                     duration={700}
@@ -85,6 +86,7 @@ const Header = () => {
             <Link
               key={index}
               to={nav.id}
+              href={nav.id}
               smooth={true}
               offset={-20}
               duration={700}
