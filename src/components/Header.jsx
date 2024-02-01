@@ -22,7 +22,8 @@ const Header = () => {
     <motion.header
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.25 }}
+      transition={{ duration: 0.5, delay: 2.5 }}
+      viewport={{ once: true }}
       className="relative flex flex-col z-0 mx-0 sm:mx-12 lg:mx-20 overflow-hidden"
     >
       {/* The part with the orange background */}
