@@ -108,9 +108,7 @@ export const questionCards = [
 ];
 
 // // Text on the "Where we are."
-export const mapLink =
-  "https://www.google.com/maps/place/Beckwith+Business+Park/@-34.481238,138.9909269,19z/data=!3m1!4b1!4m6!3m5!1s0x6ab9ebcedd1090a7:0xd6cfecd24dc2ac37!8m2!3d-34.481238!4d138.9915706!16s%2Fg%2F12hs5r5wx?entry=ttu";
-
+export const mapLink = "https://maps.app.goo.gl/xnHa7ZjZE1S5Zvb6A";
 export const whereWeAreTitle = ["A Collaborative", "A", "pproach."];
 
 export const whereWeAreContent1 = [
